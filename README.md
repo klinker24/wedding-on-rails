@@ -2,6 +2,8 @@
 
 ![image](https://raw.githubusercontent.com/klinker24/wedding-on-rails/master/header_image.png)
 
+Adapted from [wedding-on-rails](https://github.com/adambutler/wedding-on-rails).
+
 ## Setup and Deployment
 
 #### Information:
