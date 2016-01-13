@@ -84,7 +84,7 @@
           <script type="text/javascript">
           (function(){
           function wpgmappity_maps_loaded() {
-          var latlng = new google.maps.LatLng(51.456370, -2.606592);
+          var latlng = new google.maps.LatLng(40.806446, -91.125339);
           var options = {
            center : latlng,
            mapTypeId: google.maps.MapTypeId.ROADMAP,
@@ -100,7 +100,7 @@
            panControl : false, zoom : 14
           };
           var wpgmappitymap = new google.maps.Map(document.getElementById('wpgmappitymap'), options);
-          var point0 = new google.maps.LatLng(51.4606887,-2.6247733000000153);
+          var point0 = new google.maps.LatLng(40.8139319,-91.1065006);
           var marker0= new google.maps.Marker({
            icon : 'http://labio-wedding.s3.amazonaws.com/assets/church7.png',
            position : point0,
@@ -109,10 +109,10 @@
           google.maps.event.addListener(marker0,'click',
            function() {
            var infowindow = new google.maps.InfoWindow(
-           {content: '<h3 class="font-book-antiqua">The Mansion House</h3>'});
+           {content: '<h3 class="font-book-antiqua">Christ Episcopal Church</h3>'});
            infowindow.open(wpgmappitymap,marker0);
            });
-          var point1 = new google.maps.LatLng(51.4527825,-2.62524099999996);
+          var point1 = new google.maps.LatLng(40.8089764,-91.1021941);
           var marker1= new google.maps.Marker({
            icon : 'http://labio-wedding.s3.amazonaws.com/assets/hotel39.png',
            position : point1,
@@ -121,7 +121,7 @@
           google.maps.event.addListener(marker1,'click',
            function() {
            var infowindow = new google.maps.InfoWindow(
-           {content: '<h3 class="font-book-antiqua">The Bristol Hotel</h3><a target=\"_blank\" href=\"http://www.doylecollection.com/hotels/the-bristol-hotel\">Go to website</a>'});
+           {content: '<h3 class="font-book-antiqua">Burlington Memorial Auditorium</h3>'});
            infowindow.open(wpgmappitymap,marker1);
            });
           var point2 = new google.maps.LatLng(51.4488666,-2.587721999999985);
