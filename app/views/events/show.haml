@@ -20,7 +20,7 @@
       %br
 
       %h2= "at the beautiful #{@event.venue_name}"
-      %h4= "in #{@event.venue_address_city}"
+      %h4= "in #{@event.venue_address_city}, #{@event.venue_address_state}"
 
       %br
       %br
@@ -168,6 +168,6 @@
   %p
     %small
       This website was built by Luke Klinker. If you want to check it out, it's
-      %a{:href => "http://github.com/klinker24/wedding-on-rails"} open source
+      %a{:href => "http://github.com/klinker24/wedding-on-rails", :target => "_blank", :style => "target-new: tab;"} open source
       built with Ruby on Rails.
 
