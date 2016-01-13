@@ -19,19 +19,36 @@ Wedding on Rails in a Ruby on Rails application that I am using for my own weddi
 - Theme support
 - Markdown support
 
-## Installing
+## Setup and Deployment
+
+#### Information:
+1. Use ruby 2.1 for eventmanager support
+2. Add AWS config to Heroku for config/initializers/carrierwave.rb
+
+
+#### Creating a Heroku instance:
+1. heroku create
+2. git push heroku master
+3. heroku run rake db:migrate
+4. heroku run rake db:seed
+
+
+#### Deploying to Heroku:
+1. commit any changes
+2. git push heroku master
+
+
+## Useful Hints/Commands
+1. You can still use rails console to view the Heroku Postgres database.
 
 ```
-$ git clone git@github.com:adambutler/wedding-on-rails.git
-$ cd wedding-on-rails
-$ bundle install
-$ rake db:create
-$ rake db:migrate
+heroku run rails console
+heroku run rails console --sandbox
 ```
 
-## Contributing
+2. Resetting the database is different on heroku.
 
-Contributions are welcome, please follow
-[GitHub Flow](https://guides.github.com/introduction/flow/index.html)
-
-Copyright 2014 Adam Butler
+```
+heroku pg:reset DATABASE
+heroku run rake db:migrate db:seed
+```
