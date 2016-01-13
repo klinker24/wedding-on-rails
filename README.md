@@ -1,23 +1,6 @@
 # Wedding on Rails
 
-![image](https://cloud.githubusercontent.com/assets/1238468/5151689/d340dce2-71d9-11e4-9284-ff6f83e3e6a0.png)
-
-> :bomb: Please note Wedding-on-rails is currently in early active development, `master` branch may not be in a usable state.
-
-Wedding on Rails in a Ruby on Rails application that I am using for my own wedding but building in a reusable SaaS like way :)
-
-## Features
-- Guest management
-- Wedding event page with information
-- Photo uploading to AWS S3
-- Content management
-- To-do lists with defaults
-- RSVP's are taken on the website
-- Aggregated RSVP notifications 
-
-## Roadmap
-- Theme support
-- Markdown support
+![image](https://raw.githubusercontent.com/klinker24/wedding-on-rails/master/header_image.png)
 
 ## Setup and Deployment
 
