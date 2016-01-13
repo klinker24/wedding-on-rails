@@ -1,0 +1,120 @@
+body {
+  text-align: center;
+}
+
+h1 {
+  font-family: "bebas_neueregular", sans-serif;
+  font-size: 10em;
+
+  @media all and (max-width: $mobile) {
+    font-size: 3.5em;
+  }
+}
+
+h2 {
+  font-family: "learning_curve_proregular", sans-serif;
+  font-size: 5.5em;
+
+  @media all and (max-width: $mobile) {
+    font-size: 3em;
+  }
+}
+
+h3 {
+  font-family: "learning_curve_proregular", sans-serif;
+  font-size: 4em;
+
+  @media all and (max-width: $mobile) {
+    font-size: 2.2em;
+  }
+}
+
+h4 {
+  font-family: "learning_curve_proregular", sans-serif;
+  font-size: 3em;
+}
+
+h5 {
+  font-family: "bebas_neueregular", sans-serif;
+  font-size: 4em;
+
+  @media all and (max-width: $mobile) {
+    font-size: 3em;
+  }
+}
+
+h6 {
+  font-family: "bebas_neueregular", sans-serif;
+  font-size: 3em;
+}
+
+p {
+  font-family: "Book Antiqua", "Palatino", "Palatino Linotype", "Palatino LT STD", "Georgia", serif;
+  font-size: 1.2em;
+
+  small {
+    font-size: 0.8em;
+  }
+
+  @media all and (max-width: $mobile) {
+    font-size: 1em;
+  }
+}
+
+@media all and (max-width: 600px) {
+  h2 {
+    font-size: 2.2em;
+  }
+
+  h4 {
+    font-size: 2em;
+  }
+}
+
+
+.font--pacifico {
+  position: relative;
+  font-family: "pacificoregular", sans-serif;
+  font-size: 1.2em;
+  margin: 0 -0.1em;
+  top: 0.12em;
+  line-height: 0;
+}
+
+label {
+  font-family: "bebas_neueregular", sans-serif;
+  font-size: 2em;
+  color: $white;
+  [title="required"] { display: none; }
+}
+
+.text--left {
+  text-align: left;
+}
+
+.text--salmon {
+  color: $salmon;
+}
+
+#venue-copy {
+  margin-top: -100px;
+  background: $white;
+  background: rgba($white, 0.95);
+  padding: $spacing*2;
+  color: $color-text;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+
+  @media all and (max-width: 600px) {
+    padding: $spacing;
+  }
+
+
+  h3, h4 {
+    color: $color-text;
+  }
+}
+
+.font-book-antiqua {
+  font-family: "Book Antiqua", "Palatino", "Palatino Linotype", "Palatino LT STD", "Georgia", serif;
+  font-size: 16px;
+}

@@ -1,0 +1,19 @@
+.button {
+  -webkit-appearance: none;
+  outline: none;
+  border-radius: 100px;
+  background-color: $salmon;
+
+  &:hover {
+    background-color: darken($salmon, 5%);
+  }
+}
+
+.button--light {
+  background: $white;
+  color: mix($mint, #333);
+  &:hover {
+    background-color: $white;
+    color: $salmon;
+  }
+}
