@@ -45,8 +45,8 @@ johnsons = Group.create!({
   event_id: event.id
 })
 
-jake = Guest.create!({
-  name: "Jake Klinker",
+luke = Guest.create!({
+  name: "Luke Klinker",
   rsvp: true,
   invited_to_ceremony: true,
   invited_to_evening: true,
@@ -54,8 +54,8 @@ jake = Guest.create!({
   event_id: event.id
 })
 
-matt = Guest.create!({
-  name: "Matt Johnson",
+hannah = Guest.create!({
+  name: "Hannah Johnson",
   rsvp: true,
   invited_to_ceremony: true,
   invited_to_evening: true,
