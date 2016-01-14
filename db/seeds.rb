@@ -23,7 +23,7 @@ The ceremony will be held at Christ Episcopal Church. The reception, which will 
 
 **Ceremony from I-34 West:** Take the Main St exit and go south a half mile to Court St. Follow Court St for another half mile to arrive at the church.
 
-To get directions <a href"https://www.google.co.uk/maps/dir//Christ+Episcopal+Church,+Burlington,+IA+52601" target="_blank" style=target-new: tab;" />
+To get directions <a href=\"https://www.google.co.uk/maps/dir//Christ+Episcopal+Church,+Burlington,+IA+52601\" target=\"_blank\" style=\"target-new: tab;\" />
   """
 })
 
