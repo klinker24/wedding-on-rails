@@ -35,6 +35,6 @@ heroku run rails console --sandbox
 2. Resetting the database is different on heroku.
 
 ```
-heroku pg:reset DATABASE
+heroku pg:reset DATABASE --confirm murmuring-cove-7771
 heroku run rake db:migrate db:seed
 ```
