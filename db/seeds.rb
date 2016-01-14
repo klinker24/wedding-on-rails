@@ -37,24 +37,53 @@ venue_photos = VenuePhoto.create!([
 event.primary_venue_photo = venue_photos.last.id
 event.save!
 
-us = Group.create!({
+group = Group.create!({
   event_id: event.id
 })
 
-luke = Guest.create!({
+Guest.create!({
   name: "Luke Klinker",
   rsvp: true,
-  invited_to_ceremony: true,
-  invited_to_evening: true,
-  group_id: us.id,
-  event_id: event.id
+  invited_to_ceremony: true, invited_to_evening: true,
+  group_id: group.id, event_id: event.id
 })
 
-hannah = Guest.create!({
+Guest.create!({
   name: "Hannah Johnson",
   rsvp: true,
-  invited_to_ceremony: true,
-  invited_to_evening: true,
-  group_id: us.id,
+  invited_to_ceremony: true, invited_to_evening: true,
+  group_id: group.id, event_id: event.id
+})
+
+group = Group.create!({
   event_id: event.id
+})
+Guest.create!({
+  name: "Mike Klinker",
+  invited_to_ceremony: true, invited_to_evening: true,
+  group_id: group.id, event_id: event.id
+})
+Guest.create!({
+  name: "Kris Klinker",
+  invited_to_ceremony: true, invited_to_evening: true,
+  group_id: group.id, event_id: event.id
+})
+Guest.create!({
+  name: "Family",
+  invited_to_ceremony: true, invited_to_evening: true,
+  group_id: group.id, event_id: event.id
+})
+
+group = Group.create!({
+  event_id: event.id
+})
+Guest.create!({
+  name: "Jacob Klinker",
+  invited_to_ceremony: true, invited_to_evening: true,
+  group_id: group.id, event_id: event.id
+})
+Guest.create!({
+  name: "Guest",
+  invited_to_ceremony: true, invited_to_evening: true,
+  group_id: group.id, event_id: event.id
 })
