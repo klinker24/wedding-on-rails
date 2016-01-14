@@ -37,11 +37,7 @@ venue_photos = VenuePhoto.create!([
 event.primary_venue_photo = venue_photos.last.id
 event.save!
 
-klinkers = Group.create!({
-  event_id: event.id
-})
-
-johnsons = Group.create!({
+us = Group.create!({
   event_id: event.id
 })
 
@@ -50,7 +46,7 @@ luke = Guest.create!({
   rsvp: true,
   invited_to_ceremony: true,
   invited_to_evening: true,
-  group_id: klinkers.id,
+  group_id: us.id,
   event_id: event.id
 })
 
@@ -60,5 +56,5 @@ hannah = Guest.create!({
   invited_to_ceremony: true,
   invited_to_evening: true,
   group_id: johnsons.id,
-  event_id: event.id
+  event_id: us.id
 })
