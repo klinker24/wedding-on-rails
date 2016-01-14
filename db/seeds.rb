@@ -55,6 +55,6 @@ hannah = Guest.create!({
   rsvp: true,
   invited_to_ceremony: true,
   invited_to_evening: true,
-  group_id: johnsons.id,
-  event_id: us.id
+  group_id: us.id,
+  event_id: event.id
 })
