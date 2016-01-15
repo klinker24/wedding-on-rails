@@ -88,6 +88,20 @@ group = Group.create!({
   event_id: event.id
 })
 Guest.create!({
+  name: 'Logan Braadt',
+  invited_to_ceremony: true, invited_to_evening: true,
+  group_id: group.id, event_id: event.id
+})
+Guest.create!({
+  name: 'Guest',
+  invited_to_ceremony: true, invited_to_evening: true,
+  group_id: group.id, event_id: event.id
+})
+
+group = Group.create!({
+  event_id: event.id
+})
+Guest.create!({
   name: 'Doug Arndt',
   invited_to_ceremony: true, invited_to_evening: true,
   group_id: group.id, event_id: event.id
