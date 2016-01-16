@@ -10,6 +10,7 @@ Adapted from [wedding-on-rails](https://github.com/adambutler/wedding-on-rails).
 1. Use ruby 2.1 for eventmanager support
 2. Add AWS config variables to Heroku for config/initializers/carrierwave.rb
 3. Add admin username and password to Heroku config variables
+4. You can change the color scheme from /app/assets/stylesheets/themes/popcorn/core/_variables.scss
 
 
 #### Creating a Heroku instance:
