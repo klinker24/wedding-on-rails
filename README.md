@@ -15,6 +15,7 @@ Adapted from [wedding-on-rails](https://github.com/adambutler/wedding-on-rails).
 
 #### Creating a Heroku instance:
 If you are looking for a free and easy virtual machine, Cloud9 is a good place to do Rails development, it comes with all the Heroku commands ready.
+
 1. heroku create
 2. git push heroku master
 3. heroku run rake db:migrate
