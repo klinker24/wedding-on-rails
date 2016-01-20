@@ -99,7 +99,9 @@
            streetViewControl : false,
            panControl : false, zoom : 15
           };
+          
           var wpgmappitymap = new google.maps.Map(document.getElementById('wpgmappitymap'), options);
+          
           var point0 = new google.maps.LatLng(40.8138443,-91.1042089);
           var marker0= new google.maps.Marker({
            position : point0,
@@ -111,6 +113,7 @@
            {content: '<h3 class="font-book-antiqua">Christ Episcopal Church</h3>'});
            infowindow.open(wpgmappitymap,marker0);
            });
+           
           var point1 = new google.maps.LatLng(40.8089482,-91.0998595);
           var marker1= new google.maps.Marker({
            position : point1,
@@ -121,6 +124,42 @@
            var infowindow = new google.maps.InfoWindow(
            {content: '<h3 class="font-book-antiqua">Burlington Memorial Auditorium</h3>'});
            infowindow.open(wpgmappitymap,marker1);
+           });
+           
+          var point2 = new google.maps.LatLng(40.8207608,-91.1424066);
+          var marker2= new google.maps.Marker({
+           position : point1,
+           map : wpgmappitymap
+           });
+          google.maps.event.addListener(marker2,'click',
+           function() {
+           var infowindow = new google.maps.InfoWindow(
+           {content: '<h3 class="font-book-antiqua">Fairfield Inn</h3>'});
+           infowindow.open(wpgmappitymap,marker2);
+           });
+           
+          var point3 = new google.maps.LatLng(40.8252948,-91.1428216);
+          var marker3= new google.maps.Marker({
+           position : point3,
+           map : wpgmappitymap
+           });
+          google.maps.event.addListener(marker3,'click',
+           function() {
+           var infowindow = new google.maps.InfoWindow(
+           {content: '<h3 class="font-book-antiqua">Holiday Inn</h3>'});
+           infowindow.open(wpgmappitymap,marker3);
+           });
+           
+          var point4 = new google.maps.LatLng(40.7901509,-91.144632);
+          var marker4= new google.maps.Marker({
+           position : point4,
+           map : wpgmappitymap
+           });
+          google.maps.event.addListener(marker4,'click',
+           function() {
+           var infowindow = new google.maps.InfoWindow(
+           {content: '<h3 class="font-book-antiqua">Comfort Suites</h3>'});
+           infowindow.open(wpgmappitymap,marker4);
            });
           }
           window.onload = function() {
