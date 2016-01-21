@@ -48,6 +48,8 @@ We have set up room blocks for the \"Johnson/Klinker Wedding\" event at three di
 <a href=\"https://www.choicehotels.com/iowa/burlington/comfort-suites-hotels/ia107\" target=\"_blank\" style=\"target-new: tab;\">Comfort Suites</a>: Single King or Double Queen Rooms for $119
 
 These rooms must be booked by July 6th or the remaining rooms will be given back to the public!
+
+Burlington also has a resort called Pzazz! that could be great if you have kids. We don't have a block of rooms there, but it has indoor and outdoor water parks along with other fun attractions.
   """
 })
 
