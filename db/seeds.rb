@@ -44,7 +44,7 @@ Section.create!({
 We have set up room blocks for the \"Johnson/Klinker Wedding\" event at three different locations for the night of August 6th. Call the any of the hotels and request a room on that block:
 
 <a href=\"http://www.marriott.com/hotels/travel/brlfi-fairfield-inn-and-suites-burlington/\" target=\"_blank\" style=\"target-new: tab;\">Fairfield Inn</a>: Single King Room for $139 or Double Queen Room for $149
-<a href=\"http://www.ihg.com/holidayinnexpress/hotels/us/en/burlington/brgia/hoteldetail\" target=\"_blank\" style=\"target-new: tab;\">Holiday Inn</a>: Single King Room for $129 or Double Queen Room for $139
+<a href=\"http://www.hiexpress.com/redirect?path=hd&brandCode=ex&localeCode=en&regionCode=1&hotelCode=BRGIA&_PMID=99801505&GPC=KFW\" target=\"_blank\" style=\"target-new: tab;\">Holiday Inn Express</a>: Single King Room for $129 or Double Queen Room for $139
 <a href=\"https://www.choicehotels.com/iowa/burlington/comfort-suites-hotels/ia107\" target=\"_blank\" style=\"target-new: tab;\">Comfort Suites</a>: Single King or Double Queen Rooms for $119
 
 These rooms must be booked by July 6th or the remaining rooms will be given back to the public!
