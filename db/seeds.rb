@@ -44,13 +44,14 @@ Section.create!({
 We have set up room blocks for the \"Johnson/Klinker Wedding\" event at three different locations for the night of August 6th. Call the any of the hotels and request a room on that block:
 
 <a href=\"http://www.marriott.com/hotels/travel/brlfi-fairfield-inn-and-suites-burlington/\" target=\"_blank\" style=\"target-new: tab;\">Fairfield Inn</a>: Single King Room for $139 or Double Queen Room for $149
-<a href=\"http://www.hiexpress.com/redirect?path=hd&brandCode=ex&localeCode=en&regionCode=1&hotelCode=BRGIA&_PMID=99801505&GPC=KFW\" target=\"_blank\" style=\"target-new: tab;\">Holiday Inn Express</a>: Single King Room for $129 or Double Queen Room for $139
+
 <a href=\"https://www.choicehotels.com/iowa/burlington/comfort-suites-hotels/ia107\" target=\"_blank\" style=\"target-new: tab;\">Comfort Suites</a>: Single King or Double Queen Rooms for $119
+
+<a href=\"http://www.hiexpress.com/redirect?path=hd&brandCode=ex&localeCode=en&regionCode=1&hotelCode=BRGIA&_PMID=99801505&GPC=KFW\" target=\"_blank\" style=\"target-new: tab;\">Holiday Inn Express</a>: Single King Room for $129 or Double Queen Room for $139
 
 These rooms must be booked by July 6th or the remaining rooms will be given back to the public!
 
-Burlington also has a resort called Pzazz! that could be great if you have kids. We don't have a block of rooms there, but it has indoor and outdoor water parks along with other fun attractions.
-  """
+Burlington also has a resort called Pzazz! that could be great if you have kids. We don't have a block of rooms there, but it has indoor and outdoor water parks along with other fun attractions.  """
 })
 
 Section.create!({
@@ -74,8 +75,31 @@ Guest.create!({
   invited_to_ceremony: true, invited_to_evening: true,
   group_id: group.id, event_id: event.id
 })
+
+group = Group.create!({
+  event_id: event.id
+})
 Guest.create!({
-  name: 'Family',
+  name: 'Aaron Klinker',
+  invited_to_ceremony: true, invited_to_evening: true,
+  group_id: group.id, event_id: event.id
+})
+Guest.create!({
+  name: 'Guest',
+  invited_to_ceremony: true, invited_to_evening: true,
+  group_id: group.id, event_id: event.id
+})
+
+group = Group.create!({
+  event_id: event.id
+})
+Guest.create!({
+  name: 'Andrew Klinker',
+  invited_to_ceremony: true, invited_to_evening: true,
+  group_id: group.id, event_id: event.id
+})
+Guest.create!({
+  name: 'Guest',
   invited_to_ceremony: true, invited_to_evening: true,
   group_id: group.id, event_id: event.id
 })
@@ -168,8 +192,17 @@ Guest.create!({
   invited_to_ceremony: true, invited_to_evening: true,
   group_id: group.id, event_id: event.id
 })
+
+group = Group.create!({
+  event_id: event.id
+})
 Guest.create!({
-  name: 'Family',
+  name: 'Aamon Bond',
+  invited_to_ceremony: true, invited_to_evening: true,
+  group_id: group.id, event_id: event.id
+})
+Guest.create!({
+  name: 'Guest',
   invited_to_ceremony: true, invited_to_evening: true,
   group_id: group.id, event_id: event.id
 })
@@ -253,12 +286,22 @@ Guest.create!({
   invited_to_ceremony: true, invited_to_evening: true,
   group_id: group.id, event_id: event.id
 })
+Guest.create!({
+  name: 'Guest',
+  invited_to_ceremony: true, invited_to_evening: true,
+  group_id: group.id, event_id: event.id
+})
 
 group = Group.create!({
   event_id: event.id
 })
 Guest.create!({
-  name: 'Glenda Grother',
+  name: 'Glenna Grother',
+  invited_to_ceremony: true, invited_to_evening: true,
+  group_id: group.id, event_id: event.id
+})
+Guest.create!({
+  name: 'Guest',
   invited_to_ceremony: true, invited_to_evening: true,
   group_id: group.id, event_id: event.id
 })
@@ -374,21 +417,6 @@ Guest.create!({
 group = Group.create!({
   event_id: event.id
 })
-Guest.create!({
-  name: 'Ken King',
-  invited_to_ceremony: true, invited_to_evening: true,
-  group_id: group.id, event_id: event.id
-})
-Guest.create!({
-  name: 'Michelle King',
-  invited_to_ceremony: true, invited_to_evening: true,
-  group_id: group.id, event_id: event.id
-})
-Guest.create!({
-  name: 'Family',
-  invited_to_ceremony: true, invited_to_evening: true,
-  group_id: group.id, event_id: event.id
-})
 
 group = Group.create!({
   event_id: event.id
@@ -421,11 +449,6 @@ Guest.create!({
   invited_to_ceremony: true, invited_to_evening: true,
   group_id: group.id, event_id: event.id
 })
-Guest.create!({
-  name: 'Family',
-  invited_to_ceremony: true, invited_to_evening: true,
-  group_id: group.id, event_id: event.id
-})
 
 group = Group.create!({
   event_id: event.id
@@ -444,18 +467,12 @@ Guest.create!({
 group = Group.create!({
   event_id: event.id
 })
-Guest.create!({
-  name: 'Nancy Merritt',
-  invited_to_ceremony: true, invited_to_evening: true,
-  group_id: group.id, event_id: event.id
+
+group = Group.create!({
+  event_id: event.id
 })
 Guest.create!({
-  name: 'Tim Hayden',
-  invited_to_ceremony: true, invited_to_evening: true,
-  group_id: group.id, event_id: event.id
-})
-Guest.create!({
-  name: 'Family',
+  name: 'Elsie Minner',
   invited_to_ceremony: true, invited_to_evening: true,
   group_id: group.id, event_id: event.id
 })
@@ -473,30 +490,6 @@ Guest.create!({
   invited_to_ceremony: true, invited_to_evening: true,
   group_id: group.id, event_id: event.id
 })
-Guest.create!({
-  name: 'Family',
-  invited_to_ceremony: true, invited_to_evening: true,
-  group_id: group.id, event_id: event.id
-})
-
-group = Group.create!({
-  event_id: event.id
-})
-Guest.create!({
-  name: 'Matt Scott',
-  invited_to_ceremony: true, invited_to_evening: true,
-  group_id: group.id, event_id: event.id
-})
-Guest.create!({
-  name: 'Patty Scott',
-  invited_to_ceremony: true, invited_to_evening: true,
-  group_id: group.id, event_id: event.id
-})
-Guest.create!({
-  name: 'Family',
-  invited_to_ceremony: true, invited_to_evening: true,
-  group_id: group.id, event_id: event.id
-})
 
 group = Group.create!({
   event_id: event.id
@@ -511,8 +504,17 @@ Guest.create!({
   invited_to_ceremony: true, invited_to_evening: true,
   group_id: group.id, event_id: event.id
 })
+
+group = Group.create!({
+  event_id: event.id
+})
 Guest.create!({
-  name: 'Family',
+  name: 'Riley Spitzig',
+  invited_to_ceremony: true, invited_to_evening: true,
+  group_id: group.id, event_id: event.id
+})
+Guest.create!({
+  name: 'Guest',
   invited_to_ceremony: true, invited_to_evening: true,
   group_id: group.id, event_id: event.id
 })
@@ -527,30 +529,6 @@ Guest.create!({
 })
 Guest.create!({
   name: 'Michelle Stout',
-  invited_to_ceremony: true, invited_to_evening: true,
-  group_id: group.id, event_id: event.id
-})
-Guest.create!({
-  name: 'Family',
-  invited_to_ceremony: true, invited_to_evening: true,
-  group_id: group.id, event_id: event.id
-})
-
-group = Group.create!({
-  event_id: event.id
-})
-Guest.create!({
-  name: 'Jon Studer',
-  invited_to_ceremony: true, invited_to_evening: true,
-  group_id: group.id, event_id: event.id
-})
-Guest.create!({
-  name: 'Mary Studer',
-  invited_to_ceremony: true, invited_to_evening: true,
-  group_id: group.id, event_id: event.id
-})
-Guest.create!({
-  name: 'Family',
   invited_to_ceremony: true, invited_to_evening: true,
   group_id: group.id, event_id: event.id
 })
@@ -595,21 +573,6 @@ Guest.create!({
 group = Group.create!({
   event_id: event.id
 })
-Guest.create!({
-  name: 'Mark Thompson',
-  invited_to_ceremony: true, invited_to_evening: true,
-  group_id: group.id, event_id: event.id
-})
-Guest.create!({
-  name: 'RoseMary Thompson',
-  invited_to_ceremony: true, invited_to_evening: true,
-  group_id: group.id, event_id: event.id
-})
-Guest.create!({
-  name: 'Brittany Thompson',
-  invited_to_ceremony: true, invited_to_evening: true,
-  group_id: group.id, event_id: event.id
-})
 
 group = Group.create!({
   event_id: event.id
@@ -640,11 +603,6 @@ Guest.create!({
 })
 Guest.create!({
   name: 'Bobbi Thompson',
-  invited_to_ceremony: true, invited_to_evening: true,
-  group_id: group.id, event_id: event.id
-})
-Guest.create!({
-  name: 'Family',
   invited_to_ceremony: true, invited_to_evening: true,
   group_id: group.id, event_id: event.id
 })
@@ -723,11 +681,6 @@ Guest.create!({
   invited_to_ceremony: true, invited_to_evening: true,
   group_id: group.id, event_id: event.id
 })
-Guest.create!({
-  name: 'Family',
-  invited_to_ceremony: true, invited_to_evening: true,
-  group_id: group.id, event_id: event.id
-})
 
 group = Group.create!({
   event_id: event.id
@@ -756,11 +709,6 @@ Guest.create!({
   invited_to_ceremony: true, invited_to_evening: true,
   group_id: group.id, event_id: event.id
 })
-Guest.create!({
-  name: 'Family',
-  invited_to_ceremony: true, invited_to_evening: true,
-  group_id: group.id, event_id: event.id
-})
 
 group = Group.create!({
   event_id: event.id
@@ -784,6 +732,11 @@ Guest.create!({
   invited_to_ceremony: true, invited_to_evening: true,
   group_id: group.id, event_id: event.id
 })
+Guest.create!({
+  name: 'Guest',
+  invited_to_ceremony: true, invited_to_evening: true,
+  group_id: group.id, event_id: event.id
+})
 
 group = Group.create!({
   event_id: event.id
@@ -798,11 +751,6 @@ Guest.create!({
   invited_to_ceremony: true, invited_to_evening: true,
   group_id: group.id, event_id: event.id
 })
-Guest.create!({
-  name: 'Family',
-  invited_to_ceremony: true, invited_to_evening: true,
-  group_id: group.id, event_id: event.id
-})
 
 group = Group.create!({
   event_id: event.id
@@ -814,11 +762,6 @@ Guest.create!({
 })
 Guest.create!({
   name: 'Connie Zimmerman',
-  invited_to_ceremony: true, invited_to_evening: true,
-  group_id: group.id, event_id: event.id
-})
-Guest.create!({
-  name: 'Family',
   invited_to_ceremony: true, invited_to_evening: true,
   group_id: group.id, event_id: event.id
 })
@@ -1256,16 +1199,6 @@ Guest.create!({
 group = Group.create!({
   event_id: event.id
 })
-Guest.create!({
-  name: 'Mimi Niehaus',
-  invited_to_ceremony: true, invited_to_evening: true,
-  group_id: group.id, event_id: event.id
-})
-Guest.create!({
-  name: 'Perry ReplaceMe',
-  invited_to_ceremony: true, invited_to_evening: true,
-  group_id: group.id, event_id: event.id
-})
 
 group = Group.create!({
   event_id: event.id
@@ -1587,21 +1520,6 @@ Guest.create!({
 group = Group.create!({
   event_id: event.id
 })
-Guest.create!({
-  name: 'Kim ReplaceMe',
-  invited_to_ceremony: true, invited_to_evening: true,
-  group_id: group.id, event_id: event.id
-})
-Guest.create!({
-  name: 'Steve ReplaceMe',
-  invited_to_ceremony: true, invited_to_evening: true,
-  group_id: group.id, event_id: event.id
-})
-Guest.create!({
-  name: 'Family',
-  invited_to_ceremony: true, invited_to_evening: true,
-  group_id: group.id, event_id: event.id
-})
 
 group = Group.create!({
   event_id: event.id
@@ -1813,7 +1731,7 @@ group = Group.create!({
   event_id: event.id
 })
 Guest.create!({
-  name: 'Tremble Family',
+  name: 'Trimble Family',
   invited_to_ceremony: true, invited_to_evening: true,
   group_id: group.id, event_id: event.id
 })
@@ -1925,7 +1843,7 @@ Guest.create!({
   group_id: group.id, event_id: event.id
 })
 Guest.create!({
-  name: 'Justin Bogers',
+  name: 'Justim Bogers',
   invited_to_ceremony: true, invited_to_evening: true,
   group_id: group.id, event_id: event.id
 })
@@ -2243,6 +2161,118 @@ Guest.create!({
 })
 Guest.create!({
   name: 'Kendal Durkee',
+  invited_to_ceremony: true, invited_to_evening: true,
+  group_id: group.id, event_id: event.id
+})
+
+
+group = Group.create!({
+  event_id: event.id
+})
+Guest.create!({
+  name: 'Ken King',
+  invited_to_ceremony: true, invited_to_evening: true,
+  group_id: group.id, event_id: event.id
+})
+Guest.create!({
+  name: 'Michelle King',
+  invited_to_ceremony: true, invited_to_evening: true,
+  group_id: group.id, event_id: event.id
+})
+Guest.create!({
+  name: 'Mark King',
+  invited_to_ceremony: true, invited_to_evening: true,
+  group_id: group.id, event_id: event.id
+})
+Guest.create!({
+  name: 'Ruth',
+  invited_to_ceremony: true, invited_to_evening: true,
+  group_id: group.id, event_id: event.id
+})
+group = Group.create!({
+  event_id: event.id
+})
+Guest.create!({
+  name: 'Nancy Merritt',
+  invited_to_ceremony: true, invited_to_evening: true,
+  group_id: group.id, event_id: event.id
+})
+Guest.create!({
+  name: 'Sammi Merritt',
+  invited_to_ceremony: true, invited_to_evening: true,
+  group_id: group.id, event_id: event.id
+})
+Guest.create!({
+  name: 'Matt Merritt',
+  invited_to_ceremony: true, invited_to_evening: true,
+  group_id: group.id, event_id: event.id
+})
+Guest.create!({
+  name: 'Tim Hayden',
+  invited_to_ceremony: true, invited_to_evening: true,
+  group_id: group.id, event_id: event.id
+})
+Guest.create!({
+  name: 'Guest',
+  invited_to_ceremony: true, invited_to_evening: true,
+  group_id: group.id, event_id: event.id
+})
+Guest.create!({
+  name: 'Guest',
+  invited_to_ceremony: true, invited_to_evening: true,
+  group_id: group.id, event_id: event.id
+})
+group = Group.create!({
+  event_id: event.id
+})
+Guest.create!({
+  name: 'Mark Thompson',
+  invited_to_ceremony: true, invited_to_evening: true,
+  group_id: group.id, event_id: event.id
+})
+Guest.create!({
+  name: 'Rosemary Thompson',
+  invited_to_ceremony: true, invited_to_evening: true,
+  group_id: group.id, event_id: event.id
+})
+Guest.create!({
+  name: 'Brittany Thompson',
+  invited_to_ceremony: true, invited_to_evening: true,
+  group_id: group.id, event_id: event.id
+})
+Guest.create!({
+  name: 'Guest',
+  invited_to_ceremony: true, invited_to_evening: true,
+  group_id: group.id, event_id: event.id
+})
+group = Group.create!({
+  event_id: event.id
+})
+Guest.create!({
+  name: 'Mimi Niehaus',
+  invited_to_ceremony: true, invited_to_evening: true,
+  group_id: group.id, event_id: event.id
+})
+Guest.create!({
+  name: 'Perry',
+  invited_to_ceremony: true, invited_to_evening: true,
+  group_id: group.id, event_id: event.id
+})
+group = Group.create!({
+  event_id: event.id
+})
+Guest.create!({
+  name: 'Kim <last name>',
+  invited_to_ceremony: true, invited_to_evening: true,
+  group_id: group.id, event_id: event.id
+})
+Guest.create!({
+  name: 'Steve <last name>',
+  invited_to_ceremony: true, invited_to_evening: true,
+  group_id: group.id, event_id: event.id
+})
+Guest.create!({
+  name: 'Family',
   invited_to_ceremony: true, invited_to_evening: true,
   group_id: group.id, event_id: event.id
 })
