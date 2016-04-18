@@ -27,7 +27,7 @@
       %br
 
       - if @event.show_rsvp_button?
-        = link_to raw("<span class='icon icon-pencil'></span> RSVP now"), rsvp_path, class: "button large", target: "_blank", style: "target-new: tab;"
+        = link_to raw("<span class='icon icon-pencil'></span> RSVP now"), "http://hannah-lucas.klinker.xyz/rsvp", class: "button large", target: "_blank", style: "target-new: tab;"
 
 - if @event.show_rsvp?
   %br
