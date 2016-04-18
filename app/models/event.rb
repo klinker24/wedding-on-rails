@@ -26,8 +26,8 @@ class Event < ActiveRecord::Base
     #return true
   end
   
-  def show_rsvp_search?
-    return false
+  def show_rsvp_button?
+    return true
   end
 
   def in_past?

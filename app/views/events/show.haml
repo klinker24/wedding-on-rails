@@ -26,10 +26,10 @@
       %br
       %br
 
-      - if @event.show_rsvp?
+      - if @event.show_rsvp_button?
         = link_to raw("<span class='icon icon-pencil'></span> RSVP now"), "#rsvp", class: "button large js-scroll-to"
 
-- if @event.show_rsvp_search?
+- if @event.show_rsvp?
   %br
 
   #rsvp.row{ng: { controller: "RsvpController" }}
