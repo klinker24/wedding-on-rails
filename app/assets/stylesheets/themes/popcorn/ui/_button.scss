@@ -9,6 +9,17 @@
   }
 }
 
+.button--main--light {
+  -webkit-appearance: none;
+  outline: none;
+  border-radius: 100px;
+  background-color: $mint;
+
+  &:hover {
+    background-color: darken($mint, 5%);
+  }
+}
+
 .button--light {
   background: $white;
   color: mix($mint, #333);
