@@ -25,6 +25,10 @@ class Event < ActiveRecord::Base
     #return false if is_today?
     #return true
   end
+  
+  def show_rsvp_search?
+    return false
+  end
 
   def in_past?
     date < Date.today
