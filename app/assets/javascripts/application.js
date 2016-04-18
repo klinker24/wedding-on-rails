@@ -32,4 +32,4 @@
 
 //= require_tree .
 
-$(function(){ $(document).foundation(); });
+$(function(){ $(document).foundation(); $("#venue-copy").css("margin-top", function() { return -30; }); });
