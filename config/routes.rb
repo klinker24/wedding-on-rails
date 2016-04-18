@@ -32,6 +32,8 @@ Rails.application.routes.draw do
     end
     root "admin#dashboard"
   end
+  
+  get "/:page" => "rsvp#show"
 
   resources :photos, :only => [:index, :create, :destroy]
 
