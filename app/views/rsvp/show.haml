@@ -3,4 +3,14 @@
 :plain
     <script type="text/javascript" src="http://app.rsvpify.com/embed/50765"></script>
     <script type="text/javascript" src="http://app.rsvpify.com/js/iframeResizer.min.js"></script>
-    <script type="text/javascript">iFrameResize({autoResize: false,heightCalculationMethod: 'max',enablePublicMethods: true}, "#RSVPifyIFrame");</script>
+    <script type="text/javascript">
+        function resize()
+        {
+            var heights = window.innerHeight;
+            document.getElementById("RSVPifyIFrame").style.height = heights + "px";
+        }
+        resize();
+        window.onresize = function() {
+            resize();
+        };
+    </script>
