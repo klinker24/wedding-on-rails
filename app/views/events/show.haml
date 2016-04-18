@@ -174,7 +174,7 @@
 .row-fluid.overflow
   %ul.small-block-grid-3
     - @venue_photos.first(3).each do |venue_photo|
-      %li= image_tag venue_photo.file_url
+      -# = %li= image_tag venue_photo.file_url
        
 - @event.sections.each do |section|
   %section
