@@ -172,18 +172,19 @@
   #bridge
     #couple
 
+%br
+
 .row-fluid.overflow
   %ul.small-block-grid-3
     - @venue_photos.first(3).each do |venue_photo|
       %li= image_tag venue_photo.file_url
-        
+       
 - @event.sections.each do |section|
   %section
     .row
       .column.small-12.medium-8.medium-offset-2
         %h5= section.title
         = raw(section.content.from_markdown_to_html)
-
 
 %br
 
