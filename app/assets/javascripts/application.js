@@ -34,5 +34,5 @@
 
 $(function() { 
     $(document).foundation(); 
-    $("#venue-copy").css("margin-top", "-45px"); 
+    $("#venue-copy").css("margin-top", "-130px"); 
 });
