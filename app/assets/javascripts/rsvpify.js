@@ -1,3 +1,8 @@
+function loaded() {
+	window.parent.scrollTo(0,0)
+    document.getElementsByClassName('sticky_footer')[0].style.visibility='hidden';
+}
+
 function EmbedForm() {
     this.iframe = null;
     this.iframe = null;
@@ -8,7 +13,7 @@ function EmbedForm() {
     };
     this.createForm = function() {
         var ie_check = !!window.ActiveXObject;
-        var iframe = "<iframe id=\"RSVPifyIFrame\" style=\"width:100%; border:none;\" onload=\"window.parent.scrollTo(0,0)\" allowtransparency=\"true\" src=\"" + this.currentProtocol + "://hannah-lucas-wedding.app.rsvpify.com/app/?embed=1&js=1\" frameborder=\"0\" scrolling=\"no\"></iframe>";
+        var iframe = "<iframe id=\"RSVPifyIFrame\" style=\"width:100%; border:none;\" onload=\"loaded()\" allowtransparency=\"true\" src=\"" + this.currentProtocol + "://hannah-lucas-wedding.app.rsvpify.com/app/?embed=1&js=1\" frameborder=\"0\" scrolling=\"no\"></iframe>";
         document.write(iframe);
         this.iframe = document.getElementById("RSVPifyIFrame");
         if (ie_check === true) {
@@ -43,6 +48,4 @@ document.getElementById("RSVPifyIFrame").onload = function() {
         document.getElementById("RSVPifyIFrame").scrollIntoView(true);
     }
     pageForm.startScroll = true;
-
-    document.getElementsByClassName('sticky_footer')[0].style.visibility='hidden';
 };
