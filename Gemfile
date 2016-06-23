@@ -78,6 +78,8 @@ gem "delayed_job_active_record"
 gem "delayed_job_web"
 gem "kaminari"
 gem "draper"
+gem "browser"
+gem 'eventmachine', '~>1.0.4'
 
 gem "rails-assets-datetimepicker"
 gem "rails-assets-select2"
