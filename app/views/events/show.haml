@@ -27,7 +27,10 @@
       %br
 
       - if @event.show_rsvp_button?
-        = link_to raw("<span class='icon icon-pencil'></span> RSVP now"), "http://hannah-lucas.klinker.xyz/rsvp", class: "button large", target: "_blank", style: "target-new: tab;"
+        - if browser.ie?
+          = link_to raw("<span class='icon icon-pencil'></span> RSVP now"), "http://hannah-lucas-wedding.rsvpify.com", class: "button large", target: "_blank", style: "target-new: tab;"
+        - else 
+          = link_to raw("<span class='icon icon-pencil'></span> RSVP now"), "http://hannah-lucas.klinker.xyz/rsvp", class: "button large", target: "_blank", style: "target-new: tab;"
 
 - if @event.show_rsvp?
   %br
